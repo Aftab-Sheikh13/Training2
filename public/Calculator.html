@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .button{
+            border-radius: 30px;
+
+        }
+        .buttons{      
+            display: grid;  
+            grid-template-columns: 25% 25% 25% 25%;
+            
+        }
+        .total{
+            text-align: end;
+            color: white;
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .container{
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 30px 30px 20px darkgray;
+        }
+
+    </style>
+    <script src="Calculator.js"></script>
+   
+</head>
+<body><br>
+    <div class="container bg-dark"> 
+        <div class="total">
+           
+           <input type="text" id="total" placeholder="0000" style="border-radius: 10px; text-align: end; color: white;" class=" form-control bg-black">
+        </div><br>
+        <div class="buttons">
+            <button class="button btn btn-secondary" id="delete">C</button>
+            <button class="button btn btn-secondary bi bi-plus-slash-minus"></button>
+            <button class="button btn btn-secondary">%</button>
+            <button class="button btn btn-warning bi bi-slash"  value="/"></button>
+            <button class="button btn btn-dark"  value="7">7</button>
+            <button class="button btn btn-dark"  value="8">8</button>
+            <button class="button btn btn-dark" value="9">9</button>
+            <button class="button btn btn-warning bi bi-x"  value="*"></button>
+            <button class="button btn btn-dark"value="4">4</button>
+            <button class="button btn btn-dark"  value="5">5</button>
+            <button class="button btn btn-dark"  value="6">6</button>
+            <button class="button btn btn-warning bi bi-dash"  value="-"></button>
+            <button class="button btn btn-dark"  value="1">1</button>
+            <button class="button btn btn-dark" value="2">2</button>
+            <button class="button btn btn-dark"  value="3">3</button>
+            <button class="button btn btn-warning"value="+">+</button>
+            <button class="button btn btn-dark"  value="0">0</button>
+            <button class="button btn btn-dark"  value="00">00</button>
+            <button class="button btn btn-dark"  value=".">.</button>
+            <button class="button btn btn-warning" id="equal" value="=">=</button>
+        </div>
+        <div style="padding-top: 15px;">
+            <h6 style="color: white; text-align: end;">Calculator</h6>
+        </div>
+    </div>
+</body>
+</html>

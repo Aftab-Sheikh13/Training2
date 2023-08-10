@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style>
+        body{
+            background-color: rgb(224, 223, 223);
+            display: flex;
+            justify-content: center;
+
+        }
+        .container{
+            width: 300px;
+            height: auto;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 15px;
+        }
+    </style>
+    <script>
+        function loginclick()
+        {
+            var email = document.getElementById("email").value;
+            var pass  = document.getElementById("password").value; 
+            if(email === "aftab@gmail.com" && pass === "121212")
+            {
+                document.write("successfully logined")
+            }
+            else if(email==="" && pass===""){
+                alert("please enter email and password correctally")
+            }
+            else
+            {
+               alert("Invalid email or password ");
+            }
+        }
+        function registerclick(){
+           var confirmation= confirm("registered successfully");
+
+             var isconfirmed=confirmation?true:false;
+
+             if(isconfirmed){
+                alert("you confirmed");
+             }else{
+                alert("you cancled");
+             }
+        }
+    </script>
+</head>
+<body >
+    <div class="container">
+        <dl>
+            <dt>Name:</dt>
+            <dd><input type="text" class=" form-control" required></dd>
+            <dt>Email:</dt>
+            <dd><input type="email" class=" form-control" id="email" required></dd>
+            <dt>Password</dt>
+            <dd><input type="password" class=" form-control" id="password" required></dd>
+        </dl>
+        <button class="btn btn-success" onclick="loginclick()">Login</button>
+        <button class="btn btn-primary" onclick="registerclick()">Register</button>
+    </div>
+   
+</body>
+</html>

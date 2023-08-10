@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img{
+            margin-left: 460px;
+            cursor: pointer;
+        }
+        fieldset{
+            border: 1px 1px 1px solid gray;
+            width: 290px;
+            margin-left: 400px;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .espan{
+            font-weight: bold;
+            font-family: arial;
+            color: black;
+        }
+        input{
+            width: 250px;
+            
+        }
+        .button1{
+            width: 259px;
+            border:1px 1px 1px  black;
+            background-color: goldenrod;
+        }
+        button{
+            
+            width: 259px;
+            border:1px 1px 1px  black;
+            background-color: goldenrod;
+        }
+        .insta{
+            font-size: x-small;
+            color: black;
+        }
+        legend{
+            text-align: center;
+           
+        }
+        fieldset~fieldset{
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+        legend div button{
+            width: 259px;
+            border:1px 1px 1px  black;
+            background-color: silver;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 400px;
+        }
+        footer div span{
+            color: blue;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .footer2{
+            margin-left: 400px;
+            font-size: smaller;
+        }
+        .help{
+            cursor: pointer;
+            font-size: smaller;
+            color: blue
+            
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="./public/images/amazonlogo.png" alt="">
+    <form action="">
+        <fieldset>
+            <h4>Sign in</h4>
+            <span class="espan">Email or mobile phone number</span>
+            <div>
+                <input type="email" required >
+                <br><br>
+                <div class="button1">
+                <button>Continue</button>
+              </div>
+            </div>
+            <span class="insta">By continuing, you agree to Amazon's
+                                 Conditions of Use and Privacy Notice.</span>
+            <div class="help">
+                <span><a href="#">Need Help?</a></span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>New to Amazon?</legend>
+            <br>
+            <div class="button2">
+                <button>Create your Amazon account</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+<hr>
+<section></section>
+<footer>
+   <div >
+    <span> Conditions of Use |</span>
+    <span> Privacy Notice |</span>
+    <span> .help |</span>
+   </div><br>
+   
+</footer>
+
+    <div class="footer2">
+     © 1996-2022, Amazon.com, Inc. or its affiliates
+   </div>
+</html>

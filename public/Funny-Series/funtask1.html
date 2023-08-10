@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        function yesclick(){
+            document.getElementById("FAQ").innerHTML="I kneww itttt!!!!";
+            
+        }
+    </script>
+    <style>
+        .box{
+            margin-top: 20px;
+            justify-content: center ;
+            border: 2px solid gray;
+            border-radius: 20px;
+            margin-left: 360px;
+            box-shadow: 30px 30px 30px grey;
+            width: 300px;
+            height: 150px;
+        }
+        #no:hover{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="box">
+            <div>
+                <h3 style="margin-left: 9px;" id="FAQ">Are you Gay ????</h3>
+                <h3 style="margin-left: 9px;" id="yes"></h3>
+            </div>
+            <div style="margin-left: 9px;">
+                <button class="btn btn-primary" onclick="yesclick()">Yes</button>
+                <button class="btn btn-primary" id="no">No</button>
+            </div>
+
+    </div>
+</body>
+</html>

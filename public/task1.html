@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript">        
+        function SortClick(){
+            var icon =document.getElementById("icon");
+            icons.className=(icons.className=="bi bi-sort-alpha-down")?"bi bi-sort-alpha-up":"bi bi-sort-alpha-down";
+        }
+        var cities=["Delhi","Mumbai","Nagpur","Ahemdabaad","Hydrabaad","Lucknow","Bengluru","Chennai"];
+        cities.sort();
+       
+        var li=document.createElement("li");
+        li1.innerHTML=cities;
+        li.appendChild("li1");
+        document.querySelector("ol").appendChild(li);
+
+    </script>
+ </head>
+ <body class=" container-fluid">
+        <ol id="olist">
+
+        </ol>
+    <button onclick="SortClick()">
+    <span class="bi bi-sort-alpha-down" id="icons"></span>
+    </button>
+ </body>
+ </html>

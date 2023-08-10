@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Facebook</title>
+    <style>
+        
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            width: 400px;
+          
+        }
+        a{
+            text-decoration: none;
+            margin-left: 70px;
+        }
+        h2{
+            margin-left: 70px;
+            font-weight: bold;
+        }
+       input{
+        background-color: white;
+        border: none;
+        box-shadow: 2px 2px 3px grey;
+       }
+       .create{
+        background-color: white;
+        color: black;
+        width: 300px;
+        border: 1px solid rgb(152, 150, 150) ;        
+       }
+    .languages{
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+        
+    }
+    .languages label{
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        color: gray;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <form action="#">
+        <h2 class="text-primary">facebook</h2>
+        <input type="text" required placeholder="Mobile number or email address" style="width: 300px;"><br><br>
+        <input type="password" required placeholder="Password"  style="width: 300px;"><br><br>
+        <button class="btn btn-primary" style="width: 300px;">Log In </button><br>
+        <a href="##">Forgotten password??</a>
+        <hr>
+        <button class="create"> Create New Account </button>
+        <br><br>
+       <div class="languages">
+        <div>
+            <label for="">English</label><br>
+            <label for="">Hindi</label><br>
+            <label for="">Gujrati</label><br>
+            <label for="">Sindhi</label><br>
+            <label for="">Telugu</label><br>
+        </div>      
+        <div>
+            <label for="">Marathi</label><br>
+            <label for="">Urdu</label><br>
+            <label for="">Malyalam</label><br>
+            <label for="">Punjabi</label><br>
+            <label for=""><span class="bi bi-plus-square"></span></label><br>
+        </div>
+       </div>
+       <div class="footer">
+        <div>
+            About.Help.More
+        </div>
+        
+        <div>
+            Meta<span class="bi bi-c-circle">2023</span>
+        </div>
+       </div>
+    </form>   
+   </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

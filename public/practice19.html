@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="./public/images/INDIA.png">
+    <title>amazon.co.INDIA</title>
+    <style>
+        header{
+            background-color: black;
+            color: white;
+            height: 70px;
+        }
+        .brand-header{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        .brand-name{
+            width: 100px;
+            margin-left: 10px;
+            margin-top: -20px;
+        }
+        #center-header{
+            height: 35px;
+           margin-left: 200px;
+            width: 500px;
+        }
+        #input-search{
+            width: 300px;
+            border-left: none;
+            border-right: none;
+            border: 2px solid white;
+        }
+        #dropdown{
+            border: 2px solid white;
+            width: 50px;
+        }
+        .searchbutton{
+            border: 2px solid white ;
+            background-color: rgb(237, 184, 51);
+        }
+        #sign-in{
+            margin-right: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+         }
+         #header-2{
+        
+           background-color: GRAY;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+         }
+         .deliver{
+            width: 70px;
+            font-size: 10px;
+            font-weight: bold;
+         }
+         .shopby{
+            font-size: 10px;
+         }
+         #drop3{
+            border: none;
+         }
+         .details{
+            font-size: 10px;
+            padding-top: 10px;
+         }
+         .details span{
+            border: 0.1px lightgray;
+            font-weight: bold;
+            margin-top: 10px;
+         }
+         .img-div{
+            height: 150px;
+            border: 2px solid black ;
+            
+
+         }
+         .img-div img{
+            width: 100%;
+            height: 150px;
+         }
+         .img-div button{
+            border: 1px solid gray;
+            background-color: white;
+            margin-top: 118px;
+            margin-left: 980px;
+         }
+         a{
+            margin-left: 20px;
+            color: black;
+         }
+        .links{
+            width: 300px;
+            height: 150px;
+            border: 2px solid red;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .links span{
+            color: transparent;
+
+        }
+        .links span:hover{
+            color:springgreen;
+            font-size: xx-large;
+            font-style: italic;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body >
+    <header>
+
+        <div class="brand-header">
+            <div class="brand-name">
+               amazon to INDIA
+            </div>
+            <div class="input-group" id="center-header">
+                <select name="dropdown" id="dropdown" >All
+                    <option value="~">All</option>
+                    <option value="!">Men's Were</option>
+                    <option value="@">Women's Were</option>
+                    <option value="#">Kid's were </option>
+                    <option value="$">Footeware</option>
+                </select>
+                <input type="search" id="input-search" placeholder="Search Products , Brands , and More . . . . . ">
+                <button class="searchbutton"><span class="bi bi-search"></span></button>
+            </div>
+            <div>
+                <span>
+                    <select name="sign-in" id="sign-in">
+                        <option value="!">Your Account</option>
+                        <option value="@"><a href="#">Need Help??</a></option>
+                    </select>
+                </span>
+                <span class="bi bi-cart" style="margin-right: 20px;"> Basket</span>
+            </div>
+        </div>
+    </header>
+    <div id="header-2">
+        <div class="deliver">
+            <span class="bi bi-map-fill"> Deliver to 
+                <span>Your Location</span>
+            </span>
+        </div>
+        <div class="shopby">
+              Shop by <br>
+            <select name="##" id="drop3" style="background-color: gray;">
+                <option value="@@"> Department</option>
+                <option value="!!"> Account</option>
+            </select>
+        </div>
+        <div class="details">
+           <span> Your amazon.co.in </span>
+           <span> Last minutes chrismas deals</span>
+           <span>Chrismas shop</span>
+           <span>Gift Cards</span>
+           <span>Sells</span>
+           <span>Help</span>
+        </div>
+    </div>
+    <div class="img-div" >
+        <a href="https://www.instagram.com/__aa_ft_ab__13__/"><span class="bi bi-instagram"></span></a>
+       
+    </div>
+    <div class="links">
+        
+        <span>aAftab</span>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

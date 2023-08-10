@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+       function btnclick(){
+               
+                var modal=document.getElementById("modal");
+                modal.style.display="block";
+                document.getElementById("para").innerHTML=document.getElementById("name").value;
+       }
+       function closeclick(){
+                var modal = document.getElementById("modal");
+                modal.style.display="none";
+       }
+       function deleteclick(){
+            document.getElementById("name").value;
+              
+       }
+    </script>
+    <style>
+        input{
+            border: 0.1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <dl>
+            <dt>Name :</dt>
+            <dd><input type="text" class="form-control" placeholder="Write here " id="name"></dd>
+            <dd><button onclick="btnclick()" class="btn btn-outline-info" id="btnbtn">Open modal</button> <button class="btn btn-outline-danger" onclick="deleteclick()"> Delete</button></dd>
+        </dl>
+    </div>
+    <div>
+        <div class="modal" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header d-flex" >
+                      <h3>Welcome</h3>  
+                      <button class="btn btn-close"onclick="closeclick()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="para"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <p>footer</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

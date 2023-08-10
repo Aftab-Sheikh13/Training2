@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html>
+     <head>
+         <title>Text to Voice Conversion</title>
+          </head>
+         
+          <body>
+             <div> 
+                <textarea id="text-input" rows="4" cols="50" placeholder="Enter text"></textarea> <br> 
+                <button onclick="convertToSpeech()">Convert to Speech</button> </div>
+                 <script> 
+                 function convertToSpeech() { var text = document.getElementById("text-input").value; 
+                
+                  if ('speechSynthesis' in window) { var synthesis = window.speechSynthesis;
+                     var utterance = new SpeechSynthesisUtterance(text); 
+                   
+                    } else { console.log("SpeechSynthesis API is not supported in this browser."); } } 
+                 </script> 
+           </body>
+ </html>

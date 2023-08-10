@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix | @ </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <style>
+        body{
+                background-size: cover;
+                            
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .rightside{
+            margin-left: 800px;
+        }
+        select{
+            width: 100px;
+            background-color: black;
+            color: white;
+            border: 1px 1px 1px white;
+            height: 27px;
+        }
+        header div span button{ 
+            height: 25px;
+            color: white;
+            background-color: red;
+        }
+        h2{
+            color: white;
+            margin-left: 320px;
+            font-size: 30px;
+
+        }
+        h3{
+            color: white;
+            margin-left: 400px;
+        }
+        h5{
+            color: white;
+            margin-left: 320px;
+            font-size: large;
+        }
+        .middle{
+            padding-top: 100px;
+        }
+        .email{
+            
+            width: 100px;
+        }
+        button{
+            background-color: red;
+            color: black;
+            border: 2px 2px 2px white;
+            height: 25px;
+        }
+        .emailsubmit{
+                margin-left: 350px;
+        }
+        
+    </style>
+</head>
+<body background="./public/images/netflix-bg.jpg" >
+    <header>
+        <div class="form-control">
+            <span><img src="./public/images/ssnetflix.jpg" width="100" alt=""></span>
+            <span class="rightside">
+               <span>
+                <select name="dropdown" id="" >
+                    <option value=""> English</option>
+                    <option value=""> हिंदी</option>
+                    <option value=""> मराठी</option>
+                </select>
+               </span>
+               <span>
+                <button>Sign In</button>
+               </span>
+            </span>
+        </div>
+    </header>
+</body>
+<section>
+    <div class="middle">
+        <div>
+            <h2>Unlimited movies, TV shows and more.</h2>
+        </div>
+        <div>
+            <h3>
+                Watch anywhere. Cancel anytime.
+            </h3>
+        </div>
+        <div>
+            <h5>
+                Ready to watch? Enter your email to create or restart your membership.
+            </h5>
+        </div>
+    </div>
+    <div class="emailsubmit">
+        <span class="email"> 
+            <input type="email" required placeholder="Enter email">
+        </span>
+        <span class="submit">
+            <button>Get Started <span class="bi bi-chevron-right"></span></button>
+        </span>
+    </div>
+</section>
+</html>

@@ -1,0 +1,19 @@
+div{
+    width: 100px;
+    height: 100px;
+    
+
+}
+img{
+    width: 100px;
+    height: 100px;
+
+}
+@for $i from 1 through 4
+{
+    .box-#{$i}
+    {
+        margin-left: $i*100px;
+
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign in</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+     
+    </style>
+    <script>
+       var USERDETAILS ={
+        "UserName":"aftab_121",
+        "PassWord":"password"
+       }
+       function LoginClick(){
+          var username=document.getElementById("Username").value;
+          var password=document.getElementById("Password").value;
+          var error=document.getElementById("Error");
+          if(username==="")
+          {
+            error.innerHTML="User Name Required".fontcolor("red");
+          }else{
+            if(USERDETAILS.UserName===username)
+            {
+                if(USERDETAILS.PassWord===password)
+                {
+                    document.write("Login Successed");
+                } else{
+                    error.innerHTML="Invalid Password".fontcolor("red");
+                }
+            }else{
+                error.innerHTML="Invalid User Name ".fontcolor("red");
+            }
+          }
+       }
+    </script>
+</head>
+<body class=" container-fluid">
+   <div class="box-1">
+    <div class=" container">
+        <h2>Sign In</h2>
+    <dl>
+        <dt>UserName : </dt>
+        <dd><input type="text" class=" form-control w-25" id="Username"></dd>
+        <dt>Password : </dt>
+        <dd><input type="password" class=" form-control w-25" id="Password"></dd>
+    </dl>
+    <p id="Error"></p>
+    <button class="login btn btn-warning" onclick="LoginClick()">Log In </button>
+   </div>
+   </div>
+</body>
+</html>

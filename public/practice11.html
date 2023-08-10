@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <style>
+        input{
+            border: 2px 2px 2px aqua;
+            color: aqua ;
+            background-color: rgba(0, 0, 0, 0);
+            border-color: solid white;
+            border-radius: 30px;
+            box-shadow: 2px 2px 2px goldenrod;
+        }
+        label{
+            color: aqua;
+            font-weight: bold;
+            font-family: arial;
+           
+        }
+        legend{
+            color: aqua;
+            font-style: italic;
+            font-weight: bold;
+        }
+        button{
+            background-color: aqua;
+            color: black;
+            font-weight: bold;
+            border-color: aqua;
+            margin-left: 50px;
+        }
+       .divform{
+        margin-left: 400px;
+        margin-top: 100px;
+       }
+       fieldset{
+        border-color: aqua;
+       }
+    </style>
+</head>
+<body background="./public/images/bgimage.jpg">
+   
+    <div class="divform">
+        <form action="#">
+            <fieldset style="width: 200px;">
+                <legend>
+                    Hey have you sign in  
+                </legend>
+                <label for="name"> Name : </label>
+                <input type="text " required name="username"><br><br>
+                <label for="email">E-mail :</label>
+                <input type="email" required name="useremail"><br><br>
+                <label for="pass1"> Create password :</label>
+                <input type="password" required name="pass1"><br><br>
+                <label for="pass2">Retype your password :</label>
+                <input type="password" required name="pass2"><br><br>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="form-switch"> hey, I accepts all your terms and conditions </span>        
+                </label>
+                <button class=""> Sign In </button>
+            </fieldset>
+        </form>
+    </div>
+     
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        #profilePhotoPreview{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #dfdfdf;
+        }
+    
+    </style>
+    <script>
+      function previewProfilePhoto(event) {
+        var input = event.target;
+        var reader = new FileReader();
+  
+        reader.onload = function() {
+          var preview = document.getElementById('profilePhotoPreview');
+          preview.src = reader.result;
+        };
+  
+        reader.readAsDataURL(input.files[0]);
+      }
+    </script>
+</head>
+<body>
+    <h2 class="bi bi-arrow-left">  Profile Picture</h2>
+    <img id="profilePhotoPreview" src="../public/images/download.png" alt="Preview">  <br> 
+    <input type="file" class="form-control-plaintext form-input-group bi bi-camera" id="profilePhotoInput" accept="image/*"  onchange="previewProfilePhoto(event)">
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    button{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: inline;
+        position: relative;
+        color: #19aae6;
+        background: #ffffff;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 16px 24px;
+        margin: 20px;
+        border: 2px solid #19aae6;
+        border-radius: 9px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    button:before{
+        content: "";
+        position: absolute;
+        background: red;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+        z-index: -1;
+
+    }
+    button:hover{
+        color: #ffffff;
+    }
+    button:before{
+        top: 100%;
+        left: 100%;
+        transition: 0.7s;
+    }
+    button:hover:before{
+        top: -30px;
+        left: -30px;
+
+    }
+    button:active:before{
+        background:black;
+        transition: 0s;
+    }
+    </style>
+</head>
+<body>
+    <button>Hello World</button>
+</body>
+</html>

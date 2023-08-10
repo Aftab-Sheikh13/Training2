@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css">
+  <style>
+    header{
+      background-color: blue;
+      margin-left: -20px;
+      padding: 20px;
+      margin-top: -20px;
+      margin-right: -20px;
+      color: white;
+      height: 54px;
+      font-family:Arial ;
+    }
+    .container{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .container div~span{
+      padding: 10px;
+    }
+    .input-search{
+      display: flex;
+      justify-content: center;
+    }
+    .center-span~span{
+      border: 2px 2px 2px solid gray;      
+    }
+   body{
+    background-size: cover;
+     
+   }
+   
+   
+  </style>
+</head>
+<body background="./public/images/netflix-bg.jpg">
+  <header>
+    <div class="container">
+     <span style="font-size: 20px;">Flipkart.in</span>
+     <ul>
+      <li>Home</li>
+      <li>categoeries</li>
+      <li>Account</li>
+      <li>Help</li>
+     </ul>
+      <span>
+        <span class="bi bi-cart">  </span>
+        <span class="bi bi-person">  </span>
+        <span class="bi bi-heart">  </span>
+        More<span class="bi bi-chevron-right"></span>
+      </span>
+    </div><br>
+    <div class="input-search">
+      <input type="text" placeholder="Search anything...." name="searchedbyuser" style="width: 400px; height: 25px; border-radius: 30px; border-color: white;">
+      <span><button style="height: 31.3px; border-radius: 30px;border-color: white; color: gray;">Search</button></span>      
+     </div>
+  </header>
+</body>
+</html>

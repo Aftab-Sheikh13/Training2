@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @keyframes earth{
+         from{
+            margin-left: 120%;
+            margin-top: 20%;
+            height: 100px;
+            width: 100px;
+
+         }
+         50%{
+            transform: skew(30deg);
+            transform: rotate(40deg);
+
+         }
+         to{
+            
+            width: 200px;
+            height: 200px;
+         }
+      }
+     img{
+      animation-name: earth;
+      animation-duration: 2s;
+      width: 200px;
+      
+     }
+     div
+     {
+      border: 2px solid lightgreen;
+      width: 200px;
+      box-shadow: 10px 10px 3px lightgreen;
+     }
+    </style>
+ </head>
+ <body>
+    <div>
+     <img src="./public/images/aAftab.png" alt="">
+    </div>
+ </body>
+ </html>

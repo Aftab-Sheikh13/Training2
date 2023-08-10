@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="short cut icon" href="./public/images/google.png">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        img{
+            width: 20px;
+            height: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .header-right{
+            margin-top: 10px;
+            margin-left: 918px;
+        }
+        .gmail{
+            cursor: pointer;
+        }
+        .images{
+            cursor: pointer;
+        }
+        #icon{
+            cursor: pointer;
+        }
+       .title{
+        display: flex;
+        justify-content: center;
+      
+       }    
+       .input{
+        display: flex;
+        justify-content: center;
+       }  
+       input{
+       border: none;
+       width: 500px;
+       }
+       .search{
+        border: 2px solid gray;
+       margin-left: 20px;
+       }
+       .input-2{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid gray;
+        border-radius: 30px;
+        height: 35px;
+       }
+       .buttons button{
+        border: none;
+       }
+       .buttons{
+        margin-left: 350px;
+        width: 400px;
+        display: flex;
+        justify-content: space-around;
+       }
+       footer{
+        background-color: rgb(229, 217, 217);
+        height: 30px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 230px;
+       }
+      link{
+        border-radius: 30px;
+      }
+      .gmail:hover{
+        text-decoration: underline;
+      }
+      .images:hover{
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+   <header>
+    <div class="header-right">
+        <span class="gmail">  Gmail </span>
+        <span class="images"> Images</span>
+        <span class="bi bi-google" id="icon"> </span>
+        <span class="img"><img src="./public/images/aAftab.png" alt=""></span>
+    </div>
+   </header>
+        <div class="title">
+            <div class="text-primary" style="font-size: 50px; font-weight: 500;">G</div>
+            <div class="text-danger" style="font-size: 50px;font-weight: 500;">o</div>
+            <div class="text-warning" style="font-size: 50px;font-weight: 500;">o</div>
+            <div class="text-primary" style="font-size: 50px; font-weight: 500;">g</div>
+            <div class="text-success" style="font-size: 50px; font-weight: 500;">l</div>
+            <div class="text-danger" style="font-size: 50px; font-weight: 500;">e</div>     
+        </div><br>
+        <div class="input">
+            <div class="input-2">
+                <span id="search" class="bi bi-search"></span>
+                <input class="bi bi-search" type="search">
+                <span class="bi bi-mic-fill"></span>
+            </div>
+        </div><br>
+        <div class="buttons">
+            <button>Google Search</button>
+           
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <footer>
+            <div>
+                <span>Advertising</span>
+                <span>Bussiness</span>
+                <span>How Search Works</span>
+            </div>
+            <div>
+                <span>Privacy</span>
+                <span>Terms</span>
+                <span>Settings</span>
+            </div>
+        </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

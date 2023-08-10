@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./bg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.799);
+}
+nav span{
+    font-family: sans-serif;   
+    padding: 0 12px;
+    cursor: pointer;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.brandName{
+    padding: 10px 12px ;
+    font-family: sans-serif;
+}
+.logo{
+    margin-top: 110px;
+}
+.h1{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 50px;
+}
+.h4{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 50px;
+    font-size: 50px;
+    margin-top: -50px;
+}
+.h6{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 50px;
+    font-size: 17px;
+    margin-top: -33px;
+    
+}
+.buttons{
+    margin-left: 50px;
+
+}
+.start{
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.login{
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px ;
+    border-radius: 9px ;
+    background-color: transparent;
+}
+.cards{
+     margin-top: 50px;
+    color: white;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    width: 200px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    border-radius: 15px;
+}
+.info1{
+    padding: 10px 10px ;
+}
+.icon1{
+    padding: 10px 10px ;
+    size: 20px;
+}
+ 

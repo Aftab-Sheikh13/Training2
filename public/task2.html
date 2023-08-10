@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="short-cut icon" href="../public/hotel.ico">
+    <style>
+        header h2{
+            border: 2px solid black ;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        .customerinfo~div{
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            margin-left: 300px;
+        }
+        
+    </style>
+    <script type="text/javascript">
+        function RegisterClcik(){
+            document.getElementById("lblName").innerHTML=document.getElementById("customerName").value;
+            document.getElementById("lblcheckin").innerHTML=document.getElementById("checkindate").value;
+            days=document.getElementById("lbldays").innerHTML=document.getElementById("nodays").value;
+            document.getElementById("lblpersons").innerHTML=document.getElementById("nopersons").value;
+            var deluxroom=document.getElementById("deluxroom");
+            var suiteroom=document.getElementById("suiteroom");
+           
+            var total=0;
+            var acrate=1000;
+            var lockerrate=300;
+            var balance=total-advance;
+
+            if(deluxroom.checked){
+               document.getElementById("lblroom").innerHTML=document.getElementById("deluxroom").value; 
+              var deluxrate=2500;
+              total =2500*nodays;
+               
+            }
+            if(suiteroom.checked){
+               document.getElementById("lblroom").innerHTML=document.getElementById("suiteroom").value;
+               var  suiterate=4500;
+               total =suiterate*nodays;
+
+            }
+            var ac=document.getElementById("ac");
+            var locker=document.getElementById("locker");
+            if(ac.checked){
+                document.getElementById("lblamenities").innerHTML=document.getElementById("ac").value;
+                total+=acrate*nodays;
+            }
+            if(locker.checked){
+                document.getElementById("lblamenities").innerHTML +=document.getElementById("locker").value;
+                total+=lockerrate*nodays;
+            }
+             var advance=  document.getElementById("lblamount").innerHTML=document.getElementById("advance").value;
+
+            
+            document.getElementById("lblbalance").innerHTML=` ${balance} `
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Hotel Registration Form </h2>
+    </header>
+    <div>
+        <h3 style="text-align: center;color: white;border: 2px solid black;" class="bg-dark">Customer Information</h3>
+      <div style="border: 2px solid black ; padding: 9px;">
+        <div class="customerinfo"> </div>
+        <div>Customer Name : <input type="text" id="customerName" required placeholder="Enter your name" class="form-control w-50"></div><br>
+        <div>Check in Date : <input type="date" id="checkindate" class="form-control w-50"></div><br>
+        <div>Total no. of Days : <input type="number" id="nodays" class="form-control w-50"></div><br>
+        <div>Total no. of persons : <input type="number" id="nopersons" class="form-control w-50"></div><br>
+      </div>      
+    </div>
+    <div>
+        <h3 style="color: black; border: 2px solid black ; margin-top: 10px; text-align: center; color: white ;" class=" bg-dark">Select Room Type </h3>
+       <div style="width: 500px; margin-left: 300px;">
+        <div class="d-flex justify-content-between">
+            <div>
+             <img src="../public/images/deluxroom.jpg" alt="" width="150px" height="100px" style="border-radius: 20px; border: 2px solid black;"> <br>
+             <input type="radio" name="roomtype" id="deluxroom" value="Delux Room" class=" form-check-input">Delux Room  <br> <br>
+            </div>
+            <div>
+             <img src="../public/images/suiteroom.jpg" alt="" width="150px" height="100px" style="border-radius: 20px; border: 2px solid black;"> <br>
+             <input type="radio" name="roomtype" id="suiteroom" value="Suite Room" class=" form-check-input">   Suite Room
+            </div>
+        </div>
+       </div>
+    </div>
+    <div>
+        <h3 style="color: white ;text-align: center; border: 2px solid black ;" class=" bg-dark">Select Amenities</h3>
+       <div style="width: 500px; margin-left: 300px;">
+        <div class=" d-flex justify-content-between">
+            <div>
+                <img src="../public/images/ac.jpg" alt="" width="150px" height="100px" style="border: 2px solid black; border-radius: 20px;"><br>
+               <input type="checkbox" value=" A/C "  id="ac" class=" form-check-input"> A/C 
+            </div>
+            <div>
+                <img src="../public/images/locker.jpg" alt="" width="150px" height="100px" style="border: 2px solid black; border-radius: 20px;"><br>
+                <input type="checkbox" value=" Locker " id="locker" class=" form-check-input"> Locker
+            </div>
+        </div>
+       </div>
+    </div>
+    <div>
+        <h3 style="color: white; text-align: center ;" class=" bg-dark">Advance Amount</h3>
+        <div >
+            <div style="border: 2px solid black ; padding: 10px; display: flex; justify-content: center;">
+                <b>Advance Amount </b>   &#8377; <input type="text" id="advance" class="form-control w-25">
+            </div>
+        </div>
+    </div>
+    <div style="padding: 10px; display: flex; justify-content: center;">
+        <button class=" btn btn-dark" data-bs-target="#details" data-bs-toggle="modal" onclick="RegisterClcik()">Register</button>
+        <div class=" modal fade" id="details">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Customer Details</h2>
+                        <button data-bs-dismiss="modal" class="btn-close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col">
+                            <dl class="row">
+                                <dt class="col-9">Customer Name</dt>
+                                <dd class="col-3" id="lblName"></dd>
+                                <dt class="col-9">Check in Date</dt>
+                                <dd class="col-3" id="lblcheckin"></dd>
+                                <dt class="col-9">Total No of Days</dt>
+                                <dd class="col-3" id="lbldays"></dd>
+                                <dt class="col-9">Total No of Persons</dt>
+                                <dd class="col-3" id="lblpersons"></dd>
+                                <dt class="col-9">Room Type</dt>
+                                <dd class="col-3" id="lblroom"></dd>
+                                <dt class="col-9">Amenities</dt>
+                                <dd class="col-3" id="lblamenities"></dd>
+                                <dt class="col-9">Advance Amount</dt>
+                                <dd class="col-3" id="lblamount"></dd>
+                                <dt class="col-9">Balance Amount</dt>
+                                <dd class="col-3" id="lblbalance"></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 

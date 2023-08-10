@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function findlargest(a,b,c){
+             var a= document.getElementById("num1").value;
+             var b=document.getElementById("num2").value;
+             var c=document.getElementById("num3").value;
+            if(a>b && a>c)
+            {
+                document.write(a+" is greater  the other two ")
+            }else if(b>c){
+                document.write(b+" is greater than other two ")
+            }else{
+                document.write(c+" is greater than other two ")
+            }
+        }
+       
+</script>
+</head>
+<body class=" container-fluid">
+    <div class=" container">
+        <input type="text" id="num1" placeholder="A">
+        <input type="text" id="num2" placeholder="B">
+        <input type="text" id="num3" placeholder="C">
+        <button onclick="findlargest()">Largest</button>
+    </div>
+</body>
+</html>

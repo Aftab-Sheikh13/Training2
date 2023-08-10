@@ -1,0 +1,29 @@
+input {
+            
+    margin-top: 20px;
+    appearance:none;
+
+    border-radius: 30px;
+    background-color: rgb(220, 218, 218);
+    
+    background-color: #ffffff;
+}
+input::before{
+    content: "Close";
+    color: white;
+    background-color: red;
+    border: 1px solid red ;
+    padding: 9px 25px;
+    font-weight: bold;
+    border-radius: 30px;
+
+}
+input:checked::before{
+    content: "Open";
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    border: 1px solid green;
+    padding: 9px 25px;
+    border-radius: 30px;
+}

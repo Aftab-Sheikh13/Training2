@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+       
+        input{
+            background-color: white;
+            border-bottom: 2px solid black;
+        }
+        button{
+        margin-top: 10px;
+        margin-left: 10px;
+        display: inline;
+        position: relative;
+        color: #19aae6;
+        background: #ffffff;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 16px 24px;
+        margin: 20px;
+        border: 2px solid #19aae6;
+        border-radius: 9px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    button:before{
+        content: "";
+        position: absolute;
+        background: red;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+        z-index: -1;
+
+    }
+    button:hover{
+        color: #ffffff;
+    }
+    button:before{
+        top: 100%;
+        left: 100%;
+        transition: 0.7s;
+    }
+    button:hover:before{
+        top: -30px;
+        left: -30px;
+
+    }
+    button:active:before{
+        background:black;
+        transition: 0s;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+    <script type="text/javascript">
+        function submitclick(){
+        
+        var age= document.getElementById("age").value;
+            if(isNaN(age)){
+                alert("Abe bhosdike age number me hota hai")
+            }
+            else if(age<13){
+                alert("kya re....abhi to tu paida bhi nahi hua  ")
+            }
+            else if(age>80){
+                alert("are bhagwan bhi aapse do hi saal bde hai bawa")
+            }else if(age===""){
+                alert("are kuchh to bol hu hu kya lga rkha hai ")
+            }
+            else{
+                document.write("Your Age :"+age)
+            }
+        }
+    </script>
+</head>
+<body>
+   <div class="container">
+    Age : <input type="text" id="age"><br>
+    <button onclick="submitclick()">submit</button>
+   </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

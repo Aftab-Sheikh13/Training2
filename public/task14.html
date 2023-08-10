@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification Form </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter",sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0;
+        }
+        .container{
+            width: 300px;
+            height: auto;
+            padding: 40px 30px ;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        h4{
+            font-size: 20px;
+            color: #121212;
+        }
+        form{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+
+        }
+        .input-box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .input-box input{
+            border: none;
+            max-width: 20%;
+            height: 60px;
+            text-align: center;
+            border-radius: 5px;
+            background: #f0f0f0;
+            font-size: 25px;
+        }
+        .input-box input::-webkit-inner-spin-button,
+        .input-box input::-webkit-outer-spin-button{
+            display: none;
+        }
+        .input-box input:focus{
+            outline: 1.5px solid #00b991;
+            outline-offset: 2px;
+        }
+        form button{
+            margin-top: 25px;
+            width: 92%;
+            color: #525252;
+            font-size: 16px;
+            padding: 10px 0 ;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            pointer-events: none;
+            cursor: pointer;
+            background: #e9d585;
+            transition: all 0.2s ease;
+        }
+        form button:active{
+            background: #ffcc00;
+            pointer-events: auto;
+            color: #000000;
+        }
+        form button:hover{
+            background: #e6b801;
+        }
+    </style>
+    <script>
+        const otpinput=document.querySelector("input");
+        const button=document.querySelector("button");
+
+        window.addEventListener("load",()=> otpinput[0].focus());
+        otpinput.foreach((input)=>{
+            input.addEventListener("input",()=>{
+                const currentInput=input;
+                const nextInput=input.nextElementSibling;
+
+                if(currentInput.value.length>1 && currentInput.value.length==2){
+                    currentInput.value="";
+                }
+                
+                if(nextInput !==null && nextInput.hasAttribute("disabled") && currentInput.value!==""){
+                    nextInput.removeAttribute("disabled");
+                    nextInput.focus();
+                }
+
+                if(!otpinput[3].disabled && otpinput[3].value !==""){
+                    button.classList.add("active");
+                }else{
+                    button.classList.remove("active")
+                }
+            });
+
+            input.addEventListener("keyup",(e)=> {
+                if(e.key==="Backspace"){
+                    if(input.previousElementSibling !==null){
+                        e.target.value="";
+                        e.target.setAttribute("disabled",true);
+                        input.previousElementSibling.focus();
+                    }
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h4>Enter Your 4 digit OTP</h4>
+        <form class="form">
+            <div class="input-box">
+                <input type="number" />
+                <input type="number"/>
+                <input type="number" />
+                <input type="number"/>
+            </div>
+            <button>Verify OTP</button>
+        </form>
+    </div>
+</body>
+</html>
