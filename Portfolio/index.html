@@ -2,54 +2,262 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aftab Sheikh | Portfolio </title>
+    <title>Aftab Sheikh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon " href="../public/images/favicon">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <style>
         *{
-            background-color: whitesmoke;
-            
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            color: black;
+            font-family: sans-serif;
         }
         header{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            height: 60px;
-            align-items: center ;
-            background-color:white;
+            position: sticky;
+            top: 0;
         }
-        .left{
-            height: 2rem;
-          
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(209, 209, 209);
         }
-        .right{
-            height: 2rem;
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .firstsection{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .firstsection div{
+            color: black;
+            width: 38%;
+            border-radius: 15px;
+           
+        }
+        .leftsection{
+            font-size: 2.5rem;
+            padding: 10px 10px ;
+            background-color: rgb(209, 209, 209);
+        }
+        
+        .rightsection img{
+            width: 15rem;
+            border-radius: 15px;
+        
+        }
+        .profile{
+            background-color: black;
+            color: white;
+            height: 50px ;
+            padding: 10px 10px ;
+            font-size: 2rem;
+            width: 200px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .des1{
+            color: black;
+            font-style: italic;
+            margin-left: 30px;
+        }
+        .des2{
+            margin-left: 30px;
+            color: black;
+            font-style: italic;
+        }
+        .description{
             
+            display: flex;
+            justify-content: space-around;
         }
-        .pic{
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            border: 2px solid black;
-            margin-left: 400px;
-            margin-top: 30px;
-            mix-blend-mode: darken;
+        .description span{
+            background-color: rgb(209, 209, 209);
+            padding: 10px 10px;
+            width: 38%;
+            border-radius: 30px;
+        }
+        .skills-logo{
+           
+            display: flex;
+            justify-content:space-between;
+        }
+        .skills-logo img {
+            width: 15%;
+            aspect-ratio: 3/2;
+            object-fit: contain;   
+            cursor: pointer;       
+        }
+        .skills-logo img:hover{
+            transform: scale(0.7);
+            transition: ease-in;
+        }
+        .projects-ul ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .projects-ul ul li{
+            list-style: none;  
+            border: 3px solid white;          
+            padding: 5px 5px ;
+            border-radius: 15px ;
+            background: linear-gradient( to bottom right , rgba(255, 0, 0, 0.291), rgba(128, 0, 128, 0.471));
+        }
+        .projects-ul ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .social button a span {
+            color: white;
+        }
+        .social{
+            display: flex;
+            justify-content: space-around;
+        }
+        .personalinformation{
+          background-color: rgb(209, 209, 209);
+          border: 3px solid white;
+          display: flex;
+          justify-content: center;
+          padding:10px ;
+         border-radius: 20px;
+         color: black;
         }
     </style>
 </head>
-
-<header>
-        <div class="left">
-            <h2>Hi, it's Aftab Sheikh </h2>
-        </div>
-        <div class="right">
-            <h2>
-             <img src="" class="pic" alt="">
-            </h2>
-    </div>
-</header>
 <body>
-  
+    <header>
+        <nav>
+            <div class="left">
+                <h2> My Portfolio</h2>
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Project</li>
+                    <li>Qualification</li>
+                    <li>Contact Me </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                 Hi, My Name Is Aftab 
+                 and I'm a passionate <h1 style="color: red;">" Web Developer "</h1>
+            </div>
+            <div class="rightsection">
+                <img src="../public/images/portfoliopng" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+           <div class="profile">Profile</div> <br>
+           <div class="description">
+           <span class="des1">
+                "Extremely talented and driven Full Stack Web Developer with a passion for
+                creating innovative and user freindly applications"
+           </span> <br>
+           <span class="des2">
+                "I have a solid track record of producing hight quality software solutions 
+                and am proficient in both front-end and back-end technologies , with a 
+                solid foundation in programming languages"
+           </span>   
+           </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <div class="profile">Skills</div> <br> 
+            <div class="skills">
+                <span>
+                   
+                    <span class="skills-logo">
+                        <img src="../public/images/htmllogo" alt="">
+                        <img src="../public/images/csslogo" alt="">
+                        <img src="../public/images/bootstrap" alt="">
+                        <img src="../public/images/jquery" alt="">
+                        <img src="../public/images/sasslesslogo" alt="">
+                    </span>
+                    <br>
+                    <span class="skills-logo">
+                        <img src="../public/images/javascript" alt="">
+                        <img src="../public/images/nodejs" alt="">
+                        <img src="../public/images/ajax" alt="">
+                        <img src="../public/images/json" alt="">
+                        <img src="../public/images/expressjs" alt="">
+                    </span>
+                    <br>
+                    <span class="skills-logo">
+                        <img src="../public/images/mysql2" alt="">
+                        <img src="../public/images/Mongodb-PNG-Image-HD.png" alt="">
+                        <img src="../public/images/Postgresql_elephant.svg.png" alt="">
+                        <img src="../public/images/git" alt="">
+                        <img src="../public/images/GitHub-logo.png" alt="">
+                    </span>
+                </span>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection">
+            <div class="profile">Projects</div> <br> 
+            <div class="projects-ul">
+                <ul>
+                    <li><a href="../Analog Clock/index.html">Analog Clock</a></li>
+                    <li><a href="../Tic.Tac.Toe/index.html">Tic Tac Toe</a></li>
+                    <li><a href="../Spotify Clone/index.html">Spotify(clone)</a></li>
+                    <li><a href="">More in progress....</a></li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="fifthsection">
+            <div class="profile">Personal</div>
+            <div style="display: flex; justify-content: center;">
+                <div class="personalinformation">
+                    <ul style="list-style: none;">
+                        <li>Name : Aftab Musattar Sheikh </li>
+                        <li>Adress : At Mathani Mouda , Nagpur , Maharashtra 441104</li>
+                        <li>DOB : August 13 2001</li>
+                        <li>Phone : +91 7666379447</li>
+                        <li>Gender : Male </li>
+                        <li>E-mail : aftab2001@gmail.com</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="social">
+            <button class="btn btn-primary bi bi-linkedin" ><a href="https://www.linkedin.com/in/aftab-sheikh-996233257"><span> &nbsp;Linkedin</span></a></button>
+            <button class="btn btn-primary bi bi-instagram"><a href="https://instagram.com/__aa_ft_ab__13__?igshid=NTc4MTIwNjQ2YQ=="><span>&nbsp; Instagram</span></a></button>
+            <button class="btn btn-primary bi bi-twitter" disabled><a href="https://www.linkedin.com/in/aftab-sheikh-996233257"><span> &nbsp;Twitter</span></a></button>
+            <button class="btn btn-primary bi bi-whatsapp" disabled><a href="https://www.linkedin.com/in/aftab-sheikh-996233257"><span> &nbsp;WhatsApp</span></a></button>
+            <button class="btn btn-primary bi bi-facebook" disabled><a href="https://www.linkedin.com/in/aftab-sheikh-996233257"><span> &nbsp;Facebook</span></a></button>
+        </div>
+        <hr>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
