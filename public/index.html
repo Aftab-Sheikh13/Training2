@@ -1,155 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>aAftab | The First Web</title>
-    <link href="public/icon.ico" rel="shortcut icon">
-    <link  rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <style>
-        header
-        {
-            display: flex;
-            justify-content: space-between;
-            font-family: arial;
-            background-color:rgb(133, 133, 206) ;
-            color: white;
-            padding: 30px;
-            margin-left: -20px;
-            margin-top: -20px;
-            margin-right: -20px;
-        }
-        section
-        {
-            padding:150px;
-        }
-        span
-        {
-            margin-right: 20px;
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-        }
-        .brand-name
-        {
-            font-weight: bold;
-            font-size: 20px;
-        }
-        footer
-        {
-            display: grid;
-            grid-template-columns: 3fr 2.25fr 2.25fr 2.50fr 2.50fr;
-            font-family: Arial;
-            background-color: rgb(133, 133, 206);
-            padding: 30px;
-            margin-left: -20px;
-            margin-top: -20px;
-            margin-right: -20px;
-            font-size: 16px;
-            color: white;
-            height: 150px;
-           overflow: hidden;
-          
-        }
-        .social-bar
-        {
-            margin-top: 20px;
-        }
-        .social-bar span
-        {
-            margin-right: 10px;
-        }
-        .footer-title
-        {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .footer-title~div
-        {
-            margin-bottom: 10px;
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-        }
-        .brand-footer
-        {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        
-        .center span:hover{
-            color: gray;
-           border: 2px solid black;
-           background-color: white;
-           padding: 5px;
-
-        }
-        span{
-            cursor: pointer;
-        }
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
     </style>
-</head>
-<body>
-    <header class=" bg-primary">
-        <div>
-            <span class="brand-name">aAftab.in</span>
-        </div>
-        <div class="center">
-            <span>Home</span>
-            <span>Catlog</span>
-            <span>Shop</span>
-            <span>Blogs</span>
-            <span>Docs</span>
-            <span>Contact
-            </span>
-
-        </div>
-        <div>
-            <span class="bi bi-search"></span>
-            <span class="bi bi-person"> </span>
-            <span class="bi bi-heart"></span>
-            <span class="bi bi-cart"></span>
-            
-        </div>
-    </header>
-</body>
-<section>
-
-</section>
-<footer class=" bg-primary">
-    <div>
-        <span class="brand-footer">aAftab.in</span>
-        <div class="social-bar">
-        <span class="bi bi-facebook"></span>
-        <span class="bi bi-instagram"></span>
-        <span class="bi bi-twitter"></span>
-        <span class="bi bi-whatsapp"></span>
-        </div>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-    <div>
-            <div class="footer-title">SUPPORT</div>
-            <div>Contact Us</div>
-            <div>FAQs</div>
-            <div>Size Guide</div>
-            <div>Shipping & Returns</div>
-    </div>
-    <div>
-        <div class="footer-title"> SHOP</div>
-        <div>Men's Shopping</div>
-        <div>Women's Shopping</div>
-        <div>Kids' Shopping</div>
-        <div>Discounts</div>
-     </div>
-     <div>
-         <div class="footer-title">COMPANY</div>
-         <div>Our Story</div>
-         <div>Careers</div>
-         <div>Terms & Conditions</div>
-         <div>Privacy & Cookie policy</div>
-     </div>
-     <div>
-        <div class="footer-title"> CONTACT</div>
-        <div>9503486078</div>
-        <div>7666379447</div>
-        <div>aAftab@gmail.com</div>
-     </div>
- </footer>
-</body>
-</html>
-</footer>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
